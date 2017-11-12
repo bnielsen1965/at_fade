@@ -1,0 +1,333 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:shardy
+LIBS:hc-sr501
+LIBS:atfade-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCP1702 U1
+U 1 1 5A07233F
+P 4450 2650
+F 0 "U1" H 4600 2454 60  0000 C CNN
+F 1 "MCP1702" H 4450 2850 60  0000 C CNN
+F 2 "" H 4450 2650 60  0000 C CNN
+F 3 "" H 4450 2650 60  0000 C CNN
+	1    4450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L TIP120 Q1
+U 1 1 5A0723C3
+P 6650 2600
+F 0 "Q1" H 6900 2675 50  0000 L CNN
+F 1 "TIP120" H 6900 2600 50  0000 L CNN
+F 2 "TO-220" H 6900 2525 50  0000 L CIN
+F 3 "" H 6650 2600 50  0000 L CNN
+	1    6650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A072436
+P 6800 3450
+F 0 "D1" H 6800 3550 50  0000 C CNN
+F 1 "LED" H 6800 3350 50  0000 C CNN
+F 2 "" H 6800 3450 50  0000 C CNN
+F 3 "" H 6800 3450 50  0000 C CNN
+	1    6800 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5A072467
+P 3600 2600
+F 0 "R1" V 3680 2600 50  0000 C CNN
+F 1 "100" V 3600 2600 50  0000 C CNN
+F 2 "" V 3530 2600 50  0000 C CNN
+F 3 "" H 3600 2600 50  0000 C CNN
+	1    3600 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L HC-SR501 U1
+U 1 1 5A072C63
+P 5100 3650
+F 0 "U1" H 5450 3100 60  0000 C CNN
+F 1 "HC-SR501" H 5100 3650 60  0000 C CNN
+F 2 "" H 5100 3650 60  0001 C CNN
+F 3 "" H 5100 3650 60  0001 C CNN
+	1    5100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED Dn
+U 1 1 5A0776CE
+P 7800 1750
+F 0 "Dn" H 7800 1850 50  0000 C CNN
+F 1 "LED" H 7800 1650 50  0000 C CNN
+F 2 "" H 7800 1750 50  0000 C CNN
+F 3 "" H 7800 1750 50  0000 C CNN
+	1    7800 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED Dn
+U 1 1 5A077949
+P 8150 1750
+F 0 "Dn" H 8150 1850 50  0000 C CNN
+F 1 "LED" H 8150 1650 50  0000 C CNN
+F 2 "" H 8150 1750 50  0000 C CNN
+F 3 "" H 8150 1750 50  0000 C CNN
+	1    8150 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED Dn
+U 1 1 5A0779A5
+P 8500 1750
+F 0 "Dn" H 8500 1850 50  0000 C CNN
+F 1 "LED" H 8500 1650 50  0000 C CNN
+F 2 "" H 8500 1750 50  0000 C CNN
+F 3 "" H 8500 1750 50  0000 C CNN
+	1    8500 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED Dn
+U 1 1 5A077A07
+P 8850 1750
+F 0 "Dn" H 8850 1850 50  0000 C CNN
+F 1 "LED" H 8850 1650 50  0000 C CNN
+F 2 "" H 8850 1750 50  0000 C CNN
+F 3 "" H 8850 1750 50  0000 C CNN
+	1    8850 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 1950 9150 1950
+Connection ~ 8150 1950
+Connection ~ 8500 1950
+Wire Wire Line
+	7600 1550 9150 1550
+Connection ~ 8150 1550
+Connection ~ 8500 1550
+Connection ~ 8850 1550
+Connection ~ 8850 1950
+$Comp
+L CONN_01X02 P2
+U 1 1 5A077BB2
+P 7300 1750
+F 0 "P2" H 7300 1900 50  0000 C CNN
+F 1 "LED String" V 7400 1750 50  0000 C CNN
+F 2 "" H 7300 1750 50  0000 C CNN
+F 3 "" H 7300 1750 50  0000 C CNN
+	1    7300 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1550 7600 1700
+Wire Wire Line
+	7600 1700 7500 1700
+Connection ~ 7800 1550
+Wire Wire Line
+	7600 1950 7600 1800
+Wire Wire Line
+	7600 1800 7500 1800
+Connection ~ 7800 1950
+Wire Wire Line
+	6750 2250 7000 2250
+Wire Wire Line
+	7000 2250 7000 1800
+Wire Wire Line
+	7000 1800 7100 1800
+$Comp
+L CONN_01X02 P1
+U 1 1 5A0786C8
+P 2400 1550
+F 0 "P1" H 2400 1700 50  0000 C CNN
+F 1 "POWER" V 2500 1550 50  0000 C CNN
+F 2 "" H 2400 1550 50  0000 C CNN
+F 3 "" H 2400 1550 50  0000 C CNN
+	1    2400 1550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 1500 7000 1500
+Wire Wire Line
+	7000 1500 7000 1700
+Wire Wire Line
+	3750 2600 4050 2600
+Wire Wire Line
+	2600 1600 2800 1600
+Wire Wire Line
+	2800 1600 2800 3100
+Wire Wire Line
+	4450 2900 4450 4500
+Wire Wire Line
+	6750 2800 6750 3100
+Connection ~ 4450 3100
+Wire Wire Line
+	3450 2600 3150 2600
+Wire Wire Line
+	3150 2600 3150 1500
+Connection ~ 3150 1500
+$Comp
+L R R2
+U 1 1 5A0788F0
+P 6100 2600
+F 0 "R2" V 6180 2600 50  0000 C CNN
+F 1 "1000" V 6100 2600 50  0000 C CNN
+F 2 "" V 6030 2600 50  0000 C CNN
+F 3 "" H 6100 2600 50  0000 C CNN
+	1    6100 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 2600 6450 2600
+Wire Wire Line
+	4950 4300 4950 4500
+Wire Wire Line
+	4950 4500 4450 4500
+Wire Wire Line
+	4850 2600 5100 2600
+Text Notes 1900 1550 0    60   ~ 0
+12VDC
+Text Notes 1950 1650 0    60   ~ 0
+GND
+Connection ~ 6750 3100
+$Comp
+L ATTINY85-P IC1
+U 1 1 5A079475
+P 7500 4050
+F 0 "IC1" H 6350 4450 50  0000 C CNN
+F 1 "ATTINY85-P" H 8500 3650 50  0000 C CNN
+F 2 "DIP8" H 8500 4050 50  0000 C CIN
+F 3 "" H 7500 4050 50  0000 C CNN
+	1    7500 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4300 5250 4500
+Wire Wire Line
+	5250 4500 5650 4500
+Wire Wire Line
+	8850 3800 8950 3800
+Wire Wire Line
+	8950 3800 8950 3250
+Wire Wire Line
+	8950 3250 5100 3250
+Wire Wire Line
+	5100 3250 5100 2600
+Wire Wire Line
+	5650 3250 5650 4900
+Connection ~ 5650 3250
+Wire Wire Line
+	8850 4300 9100 4300
+Wire Wire Line
+	9100 4300 9100 3100
+Wire Wire Line
+	9100 3100 2800 3100
+$Comp
+L R R3
+U 1 1 5A07A7CC
+P 7350 3450
+F 0 "R3" V 7430 3450 50  0000 C CNN
+F 1 "100" V 7350 3450 50  0000 C CNN
+F 2 "" V 7280 3450 50  0000 C CNN
+F 3 "" H 7350 3450 50  0000 C CNN
+	1    7350 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6150 3800 5800 3800
+Wire Wire Line
+	5800 3800 5800 2600
+Wire Wire Line
+	5800 2600 5950 2600
+Wire Wire Line
+	6150 3900 5800 3900
+Wire Wire Line
+	5800 3900 5800 4650
+Wire Wire Line
+	5800 4650 5100 4650
+Wire Wire Line
+	5100 4650 5100 4300
+Wire Wire Line
+	6150 4000 5950 4000
+Wire Wire Line
+	5950 4000 5950 3450
+Wire Wire Line
+	5950 3450 6600 3450
+Wire Wire Line
+	7000 3450 7200 3450
+Wire Wire Line
+	7500 3450 7700 3450
+Wire Wire Line
+	7700 3450 7700 3250
+Connection ~ 7700 3250
+Wire Wire Line
+	6750 2400 6750 2250
+Wire Wire Line
+	7000 1700 7100 1700
+$Comp
+L R R4
+U 1 1 5A07AE21
+P 5950 4650
+F 0 "R4" V 6030 4650 50  0000 C CNN
+F 1 "33K" V 5950 4650 50  0000 C CNN
+F 2 "" V 5880 4650 50  0000 C CNN
+F 3 "" H 5950 4650 50  0000 C CNN
+	1    5950 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 4300 5950 4300
+Wire Wire Line
+	5950 4300 5950 4500
+Wire Wire Line
+	5950 4800 5950 4900
+Wire Wire Line
+	5950 4900 5650 4900
+Connection ~ 5650 4500
+$EndSCHEMATC
